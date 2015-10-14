@@ -12,7 +12,7 @@ describe('routes', function() {
     server.close();
   });
 
-  it('responds with stubbed response for /insights/api/blog', function(done) {
+  it('responds with "hello world!" /', function(done) {
     request(server)
       .get('/')
       .expect('Content-Type', /json/)
